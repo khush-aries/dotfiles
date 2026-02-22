@@ -9,7 +9,7 @@ default-root-container-orientation = 'auto'
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 on-focus-changed = "move-mouse window-lazy-center"
 automatically-unhide-macos-hidden-apps = false
-persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+persistent-workspaces = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 on-mode-changed = []
 
 [key-mapping]
@@ -87,18 +87,22 @@ on-mode-changed = []
     alt-r = 'mode resize'
     alt-shift-semicolon = 'mode service'
 
-[mode.resize.binding]
-    h = 'resize smart -50'
-    j = 'resize smart-opposite +50'
-    k = 'resize smart-opposite -50'
-    l = 'resize smart +50'
+[workspace-to-monitor-force-assignment]
+    10 = 2
 
-    left  = 'resize smart -50'
-    down  = 'resize smart-opposite +50'
-    up    = 'resize smart-opposite -50'
-    right = 'resize smart +50'
+[mode.resize.binding]
+    h = 'resize width -50'
+    l = 'resize width +50'
+    j = 'resize height +50'
+    k = 'resize height -50'
+
+    left  = 'resize width -50'
+    right = 'resize width +50'
+    down  = 'resize height +50'
+    up    = 'resize height -50'
 
     esc = 'mode main'
+    enter = 'mode main'
 
 [mode.service.binding]
     esc = ['reload-config', 'mode main']
