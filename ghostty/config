@@ -12,12 +12,13 @@ shell-integration-features = no-cursor
 # theme = Dracula
 # theme = Gruvbox Dark Hard
 # theme = Gruvbox Light
-theme = Gruber Darker
+# theme = Gruber Darker
 # theme = Kanagawabones
+theme = IBM 5153 CGA (Black)
 
 font-size = 14
-# font-family = JetBrainsMono NF ExtraBold
-font-family = Iosevka NF ExtraBold
+font-family = JetBrainsMono NF ExtraBold
+# font-family = Iosevka NF ExtraBold
 # font-family = Iosevka NF
 
 clipboard-read = allow
@@ -28,5 +29,6 @@ mouse-hide-while-typing = true
 clipboard-trim-trailing-spaces = true
 clipboard-paste-protection = false
 
-# background-opacity = 0.8
+# background-opacity = 0.5
 keybind = shift+enter=text:\x1b\r
+macos-icon = microchip
